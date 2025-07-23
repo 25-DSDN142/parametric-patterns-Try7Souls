@@ -1,6 +1,6 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
+let mouseheadY = 120; //80
+let eyeSize = 15; //10
 
 
 function setup_wallpaper(pWallpaper) {
@@ -21,5 +21,28 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+//ears and head
+fill(169, 169, 169)
+circle(50,mouseheadY,50)
+circle(150,mouseheadY,50)
+triangle(50,mouseheadY,150,mouseheadY,100,150)
+stroke(0)
+fill(255)
+
+strokeWeight(1.5)
+//eyes
+ellipse(80,120,eyeSize+5,eyeSize)
+ellipse(120,120,eyeSize+5,eyeSize)
+strokeWeight(1)
+fill(0)
+
+//iner eyes
+ellipse(80,120,eyeSize-2.5,eyeSize)
+ellipse(120,120,eyeSize-2.5,eyeSize)
+strokeWeight(0)
+
+//nose
+ellipse(100,150,15)
+strokeWeight(1)
+
 }

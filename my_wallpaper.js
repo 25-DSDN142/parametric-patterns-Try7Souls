@@ -24,10 +24,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
 
  
-beginShape()
-vertex(175,25);
-bezierVertex(100, 80, 25, 25, 25, 25);
-endShape();
+//beginShape()
+//vertex(175,25);
+//bezierVertex(100, 80, 25, 25, 25, 25);
+//endShape();
 
 
 beginShape();
@@ -51,6 +51,12 @@ vertex(0,200)
 vertex(50,200)
 endShape()
 
+beginShape();
+vertex(200,150)
+quadraticVertex(150,150,150,200)
+vertex(200,200)
+vertex(200,150)
+endShape()
 
 
   

@@ -35,13 +35,5 @@ line(150,105)
 
 }
 
-//fill(0)
-//iner eyes
-//ellipse(80,120,eyeSize-2.5,10)
-//ellipse(120,120,eyeSize-2.5,10)
-//strokeWeight(0)
 
-//nose
-//ellipse(100,150,15)
-//strokeWeight(1)
 

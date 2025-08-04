@@ -1,7 +1,8 @@
-//your parameter variables go here!
-//let mouseheadY = 80;
-//let eyeSize = 10;
+let eyeX = 100;
+let eyeY = 100;
 
+let insaneX = eyeX;
+let insaneY = eyeY;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -18,22 +19,36 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
-
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  
 
-line(150,105)
-//fill(255, 100, 0); // orange flame
+  fill(255); // Eye
+  stroke(0);
+  strokeWeight(2);
+  beginShape();
+  vertex(eyeX-50,eyeY);
+  quadraticVertex(eyeX,eyeY-50,eyeX+50,eyeY);
+  quadraticVertex(eyeX,eyeY+50,eyeX-50,eyeY);
+  endShape();
 
-//beginShape();                    // bottom right
-//quadraticVertex(145,130,140,120);   // inner curve
-//quadraticVertex(155,100,150,120);        // outer curve
-//quadraticVertex(155,140,150,150);             // curve back to base
-//endShape();
+//Sainty Eye Lines
+stroke(150, 0, 200, 120);
+strokeWeight(1);
+
+line(insaneX, insaneY,insaneX,insaneY-50);
+line(insaneX, insaneY,insaneX+35,insaneY-35);
+line(insaneX, insaneY,insaneX+50,insaneY);
+line(insaneX, insaneY,insaneX+35,insaneY+35);
+line(insaneX, insaneY,insaneX,insaneY+50);
+line(insaneX, insaneY,insaneX-35,insaneY+35);
+line(insaneX, insaneY,insaneX-50,insaneY);
+line(insaneX, insaneY,insaneX-35,insaneY-35);
+
+
+// Pupil
+fill(0);
+ellipse(eyeX,eyeY,10,10);
+
 
 }
-
-
-

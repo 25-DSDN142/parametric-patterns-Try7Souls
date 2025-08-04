@@ -1,21 +1,22 @@
-let eyeX = 100; // change X value of eye
-let eyeY = 100; // change Y value of 
+//your parameter variables go here!
+let eyeX = 60; // change X value of eye
+let eyeY = 140; // change Y value of 
 
-let insaneX = eyeX;
-let insaneY = eyeY;
+let insaneX = 200;
+let insaneY = 0;
 
-let pupilSize = 10; // change size of the pupil in the middle
-let flameColor = [130, 70, 180]; // change RGB color of flame marks
-let showBlackLine = false; // toggle bracket lines on/off
-let outerCircleSize = 160; // change diameter of big circle around the eye
-let insaneLine = 250; // changes transparency of the purple lines
-let bgColor = [40]; // change background color
+let pupilSize = 50; // change size of the pupil in the middle
+let flameColor = [255, 255, 0]; // change RGB color of flame marks
+let outerCircleSize = 40; // change diameter of big circle around the eye
+let insaneLine = 255; // changes transparency of the purple lines
+let bgColor = [10]; // change background color
+let showBlackLine = true; // toggle bracket lines on/off
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
 
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); // set this to false when you're ready to print
 
   // Grid settings
